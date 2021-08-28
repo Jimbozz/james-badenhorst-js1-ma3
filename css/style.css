@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+}
+
+.results {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  padding: 1rem;
+  background-color: rgba(0, 128, 0, 0.377);
+}
+
+.error {
+  display: inline-block;
+  padding: 1rem;
+  color: red;
+  background: rgba(199, 6, 6, 0.288);
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid green;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
